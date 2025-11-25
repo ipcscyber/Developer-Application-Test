@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dexxter Services - Recrutement Développeur</title>
+    <title>Dexxter Services - Developer Test</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,17 +14,12 @@
         <div class="loading-content">
             <div class="loading-logo">
                 <div class="logo-icon">
-                    <i class="fas fa-shield-alt"></i>
+                    <i class="fas fa-code"></i>
                 </div>
                 <h1>Dexxter Services</h1>
             </div>
             <div class="loading-spinner"></div>
-            <p>Initialisation de la plateforme de recrutement sécurisée</p>
-            <div class="loading-progress">
-                <div class="progress-bar">
-                    <div class="progress-fill"></div>
-                </div>
-            </div>
+            <p>Initializing Developer Test Platform</p>
         </div>
     </div>
 
@@ -36,368 +31,442 @@
                     <i class="fas fa-code"></i>
                     <span>Dexxter Services</span>
                 </div>
-                <div class="header-tagline">Recrutement Développeur</div>
+                <div class="header-tagline">Developer Test Portal</div>
             </div>
-            
-            <div class="header-controls">
-                <div class="session-info">
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <span id="sessionTimer">00:00:00</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-user"></i>
-                        <span id="userStatus">Candidat</span>
-                    </div>
-                </div>
-            </div>
+            <nav class="main-nav">
+                <a href="#home" class="nav-link active" data-page="home">Home</a>
+                <a href="#questions" class="nav-link" data-page="questions">Developer Test</a>
+                <a href="#ai-detection" class="nav-link" data-page="ai-detection">AI Detection</a>
+                <a href="#help" class="nav-link" data-page="help">Help</a>
+                <a href="#webhook-test" class="nav-link" data-page="webhook-test">Webhook Test</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Navigation Progress -->
-    <nav class="progress-nav" id="progressNav">
-        <div class="nav-container">
-            <div class="progress-steps">
-                <div class="step active" data-step="1">
-                    <div class="step-icon">
-                        <i class="fas fa-file-signature"></i>
-                    </div>
-                    <span class="step-text">Accueil</span>
-                </div>
-                <div class="step" data-step="2">
-                    <div class="step-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <span class="step-text">Profil</span>
-                </div>
-                <div class="step" data-step="3">
-                    <div class="step-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <span class="step-text">Test Technique</span>
-                </div>
-                <div class="step" data-step="4">
-                    <div class="step-icon">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <span class="step-text">Soumission</span>
-                </div>
-            </div>
-            <div class="progress-bar">
-                <div class="progress-fill" id="mainProgressFill"></div>
-            </div>
-        </div>
-    </nav>
-
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Section 1: Welcome -->
-        <section id="welcomeSection" class="content-section active">
-            <div class="section-container">
-                <div class="welcome-header">
-                    <div class="welcome-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h1>Bienvenue chez Dexxter Services</h1>
-                    <p class="welcome-subtitle">Plateforme de Recrutement Développeur</p>
-                </div>
-
-                <div class="welcome-content">
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h3>Environnement Sécurisé</h3>
-                            <p>Session protégée avec monitoring en temps réel</p>
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">Dexxter Services Developer Test</h1>
+                    <p class="hero-subtitle">Prove your skills and join our elite development team</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Comprehensive Technical Assessment</span>
                         </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h3>Test Technique Complet</h3>
-                            <p>Évaluation des compétences en développement Roblox</p>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Advanced AI Detection</span>
                         </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <h3>Temps Illimité</h3>
-                            <p>Prenez le temps nécessaire pour chaque question</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-forward"></i>
-                            </div>
-                            <h3>5 Passages Autorisés</h3>
-                            <p>Passez les questions difficiles et revenez-y plus tard</p>
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Real-time Evaluation</span>
                         </div>
                     </div>
-
-                    <div class="rules-section">
-                        <div class="rules-card">
-                            <h3><i class="fas fa-gavel"></i> Règles du Test</h3>
-                            <div class="rules-list">
-                                <div class="rule-item">
-                                    <i class="fas fa-ban"></i>
-                                    <span>L'utilisation d'IA (ChatGPT, etc.) est strictement interdite</span>
-                                </div>
-                                <div class="rule-item">
-                                    <i class="fas fa-forward"></i>
-                                    <span>Navigation avant uniquement - pas de retour en arrière</span>
-                                </div>
-                                <div class="rule-item">
-                                    <i class="fas fa-redo"></i>
-                                    <span>5 passages maximum autorisés</span>
-                                </div>
-                                <div class="rule-item">
-                                    <i class="fas fa-eye"></i>
-                                    <span>La session est surveillée pour intégrité</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="action-section">
-                        <button class="btn btn-primary btn-large" onclick="nextSection()">
-                            <i class="fas fa-play"></i>
-                            Commencer la Candidature
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large" onclick="showPage('questions')">
+                            Start Developer Test
+                            <i class="fas fa-arrow-right"></i>
                         </button>
-                        <p class="action-note">
-                            <i class="fas fa-info-circle"></i>
-                            Temps estimé : 45-90 minutes
-                        </p>
+                        <button class="btn btn-secondary" onclick="showPage('ai-detection')">
+                            <i class="fas fa-robot"></i>
+                            AI Detection
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-graphic">
+                    <div class="code-animation">
+                        <div class="code-line"></div>
+                        <div class="code-line"></div>
+                        <div class="code-line"></div>
+                        <div class="code-line"></div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Section 2: Profile -->
-        <section id="profileSection" class="content-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h1><i class="fas fa-user-tie"></i> Profil Candidat</h1>
-                    <p>Informations personnelles et professionnelles</p>
-                </div>
-
-                <form class="profile-form" id="profileForm">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="fullName">
-                                <i class="fas fa-signature"></i>
-                                Nom Complet *
-                            </label>
-                            <input type="text" id="fullName" name="fullName" required 
-                                   placeholder="Votre nom complet">
+            <div class="info-section">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-file-code"></i>
                         </div>
-                        <div class="form-group">
-                            <label for="robloxUsername">
-                                <i class="fas fa-gamepad"></i>
-                                Pseudo Roblox *
-                            </label>
-                            <input type="text" id="robloxUsername" name="robloxUsername" required 
-                                   placeholder="Votre pseudo Roblox">
-                        </div>
-                    </div>
-
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="discordId">
-                                <i class="fab fa-discord"></i>
-                                Discord *
-                            </label>
-                            <input type="text" id="discordId" name="discordId" required 
-                                   placeholder="utilisateur#1234">
-                        </div>
-                        <div class="form-group">
-                            <label for="age">
-                                <i class="fas fa-birthday-cake"></i>
-                                Âge *
-                            </label>
-                            <input type="number" id="age" name="age" min="16" max="99" required 
-                                   placeholder="Votre âge">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="experience">
-                            <i class="fas fa-code"></i>
-                            Expérience en Développement *
-                        </label>
-                        <select id="experience" name="experience" required>
-                            <option value="">Sélectionnez votre niveau</option>
-                            <option value="debutant">Débutant (0-1 an)</option>
-                            <option value="intermediaire">Intermédiaire (1-3 ans)</option>
-                            <option value="avance">Avancé (3-5 ans)</option>
-                            <option value="expert">Expert (5+ ans)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="portfolio">
-                            <i class="fas fa-link"></i>
-                            Portfolio / GitHub (Optionnel)
-                        </label>
-                        <input type="url" id="portfolio" name="portfolio" 
-                               placeholder="https://github.com/votre-profil">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="motivation">
-                            <i class="fas fa-question-circle"></i>
-                            Motivation *
-                        </label>
-                        <textarea id="motivation" name="motivation" rows="4" 
-                                  placeholder="Pourquoi souhaitez-vous rejoindre Dexxter Services ? Quelles sont vos compétences et objectifs ?" required></textarea>
-                    </div>
-
-                    <div class="form-actions">
-                        <button type="button" class="btn btn-secondary" onclick="previousSection()">
-                            <i class="fas fa-arrow-left"></i>
-                            Retour
-                        </button>
-                        <button type="button" class="btn btn-primary" onclick="validateProfile()">
-                            Continuer vers le Test
+                        <h3>Developer Questions</h3>
+                        <p>Comprehensive technical assessment covering advanced Lua scripting, Roblox exploitation, and security concepts.</p>
+                        <button class="btn btn-outline" onclick="showPage('questions')">
+                            View Questions
                             <i class="fas fa-arrow-right"></i>
                         </button>
                     </div>
-                </form>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Detection</h3>
+                        <p>Advanced AI content detection to ensure authentic, human-written responses and maintain test integrity.</p>
+                        <button class="btn btn-outline" onclick="showPage('ai-detection')">
+                            Test AI Detection
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-life-ring"></i>
+                        </div>
+                        <h3>Help & Documentation</h3>
+                        <p>Comprehensive guides, evaluation criteria, and support resources to help you succeed.</p>
+                        <button class="btn btn-outline" onclick="showPage('help')">
+                            Get Help
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-webhook"></i>
+                        </div>
+                        <h3>Webhook Test</h3>
+                        <p>Test the submission system and verify that your responses are being properly recorded.</p>
+                        <button class="btn btn-outline" onclick="showPage('webhook-test')">
+                            Test Webhook
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Section 3: Technical Test -->
-        <section id="testSection" class="content-section">
-            <div class="section-container">
-                <div class="test-header">
-                    <div class="test-info">
-                        <h1><i class="fas fa-laptop-code"></i> Test Technique</h1>
-                        <p>Évaluation des compétences en développement</p>
-                    </div>
-                    <div class="test-controls">
-                        <div class="control-group">
-                            <button class="control-btn skip-btn" onclick="skipQuestion()" id="skipBtn">
-                                <i class="fas fa-forward"></i>
-                                Passer
-                                <span class="skip-count" id="skipCount">5</span>
-                            </button>
-                            <button class="control-btn help-btn" onclick="showHelp()">
-                                <i class="fas fa-question-circle"></i>
-                                Aide
-                            </button>
-                        </div>
-                        <div class="control-group">
-                            <button class="control-btn save-btn" onclick="saveProgress()">
-                                <i class="fas fa-save"></i>
-                                Sauvegarder
-                            </button>
-                            <button class="control-btn fullscreen-btn" onclick="toggleFullscreen()">
-                                <i class="fas fa-expand"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+        <!-- Developer Questions Page -->
+        <section id="questions" class="page">
+            <div class="page-header">
+                <h1><i class="fas fa-laptop-code"></i> Developer Test Questions</h1>
+                <p>Complete the following technical assessment. All submissions are automatically saved and evaluated.</p>
+            </div>
 
-                <div class="test-monitor">
-                    <div class="monitor-item">
+            <div class="test-info">
+                <div class="test-stats">
+                    <div class="stat">
                         <i class="fas fa-clock"></i>
-                        <span>Temps: <strong id="testTimer">00:00:00</strong></span>
+                        <span>Time: <strong id="testTimer">00:00:00</strong></span>
                     </div>
-                    <div class="monitor-item">
-                        <i class="fas fa-list-ol"></i>
-                        <span>Question: <strong id="currentQuestion">1</strong>/<span id="totalQuestions">8</span></span>
-                    </div>
-                    <div class="monitor-item">
+                    <div class="stat">
                         <i class="fas fa-check-circle"></i>
-                        <span>Répondu: <strong id="answeredCount">0</strong></span>
+                        <span>Completed: <strong id="completedCount">0</strong>/<span id="totalQuestions">8</span></span>
                     </div>
-                    <div class="monitor-item">
-                        <i class="fas fa-forward"></i>
-                        <span>Passages: <strong id="skipsUsed">0</strong></span>
+                    <div class="stat">
+                        <i class="fas fa-save"></i>
+                        <span id="saveStatus">All progress saved</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="questions-container" id="questionsContainer">
+                <!-- Questions will be loaded dynamically -->
+            </div>
+
+            <div class="submission-section">
+                <button class="btn btn-success btn-large" onclick="submitAllAnswers()" id="submitAllBtn">
+                    <i class="fas fa-paper-plane"></i>
+                    Submit All Answers
+                </button>
+                <p class="submission-note">
+                    <i class="fas fa-info-circle"></i>
+                    All answers are automatically saved. Final submission sends complete test results.
+                </p>
+            </div>
+        </section>
+
+        <!-- AI Detection Page -->
+        <section id="ai-detection" class="page">
+            <div class="page-header">
+                <h1><i class="fas fa-robot"></i> AI Content Detection</h1>
+                <p>Analyze text or code to detect AI-generated content and ensure authentic human responses.</p>
+            </div>
+
+            <div class="ai-detector">
+                <div class="detector-input">
+                    <label for="aiInput">Enter text or code to analyze:</label>
+                    <textarea id="aiInput" placeholder="Paste your text or code here for AI detection analysis..." rows="10"></textarea>
+                    <div class="input-actions">
+                        <button class="btn btn-primary" onclick="analyzeContent()">
+                            <i class="fas fa-search"></i>
+                            Analyze Content
+                        </button>
+                        <button class="btn btn-secondary" onclick="clearAIDetection()">
+                            <i class="fas fa-eraser"></i>
+                            Clear
+                        </button>
                     </div>
                 </div>
 
-                <div class="question-container" id="questionContainer">
-                    <!-- Questions will be loaded here dynamically -->
-                </div>
-
-                <div class="navigation-actions">
-                    <button class="btn btn-primary btn-large" onclick="nextQuestion()" id="nextQuestionBtn">
-                        Question Suivante
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
+                <div class="detector-results" id="detectorResults" style="display: none;">
+                    <h3>AI Detection Results</h3>
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <div class="result-label">AI Generated</div>
+                            <div class="result-value" id="aiScore">0%</div>
+                            <div class="result-bar">
+                                <div class="result-fill ai-fill" id="aiFill"></div>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-label">Human Written</div>
+                            <div class="result-value" id="humanScore">0%</div>
+                            <div class="result-bar">
+                                <div class="result-fill human-fill" id="humanFill"></div>
+                            </div>
+                        </div>
+                        <div class="result-card full-width">
+                            <div class="result-label">Confidence Score</div>
+                            <div class="result-value" id="confidenceScore">0%</div>
+                            <div class="result-bar">
+                                <div class="result-fill confidence-fill" id="confidenceFill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analysis-summary" id="analysisSummary">
+                        <!-- Analysis summary will be populated here -->
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 4: Submission -->
-        <section id="submissionSection" class="content-section">
-            <div class="section-container">
-                <div class="submission-header">
-                    <div class="success-icon">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <h1>Test Terminé !</h1>
-                    <p class="success-message">Félicitations pour avoir complété l'évaluation technique</p>
-                </div>
+        <!-- Help Page -->
+        <section id="help" class="page">
+            <div class="page-header">
+                <h1><i class="fas fa-life-ring"></i> Help & Documentation</h1>
+                <p>Resources and guidelines to help you complete the developer test successfully.</p>
+            </div>
 
-                <div class="results-summary">
-                    <div class="summary-grid">
-                        <div class="summary-card">
-                            <div class="summary-icon">
-                                <i class="fas fa-chart-bar"></i>
-                            </div>
-                            <div class="summary-content">
-                                <h3>Performance</h3>
-                                <div class="stats">
-                                    <div class="stat">
-                                        <span class="stat-value" id="completionRate">0%</span>
-                                        <span class="stat-label">Complétion</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="stat-value" id="timeSpent">00:00</span>
-                                        <span class="stat-label">Temps</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="stat-value" id="questionsAnswered">0</span>
-                                        <span class="stat-label">Réponses</span>
-                                    </div>
+            <div class="help-content">
+                <div class="help-sections">
+                    <div class="help-section">
+                        <h2><i class="fas fa-book"></i> How to Complete the Test</h2>
+                        <div class="help-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Read Questions Carefully</h3>
+                                    <p>Each question tests specific technical skills. Read them thoroughly before answering.</p>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="summary-card">
-                            <div class="summary-icon">
-                                <i class="fas fa-user-check"></i>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Provide Detailed Answers</h3>
+                                    <p>Include code examples, explanations, and demonstrate your problem-solving approach.</p>
+                                </div>
                             </div>
-                            <div class="summary-content">
-                                <h3>Votre Profil</h3>
-                                <div class="profile-summary" id="profileSummary">
-                                    <!-- Profile summary will be loaded here -->
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Use Proper Formatting</h3>
+                                    <p>Format your code properly and use clear, concise explanations for text answers.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Submit All Answers</h3>
+                                    <p>Ensure all questions are answered before final submission. Answers auto-save as you type.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="help-section">
+                        <h2><i class="fas fa-star"></i> Evaluation Criteria</h2>
+                        <div class="criteria-grid">
+                            <div class="criterion">
+                                <i class="fas fa-code"></i>
+                                <h3>Code Quality</h3>
+                                <p>Efficiency, readability, proper syntax, and best practices</p>
+                            </div>
+                            <div class="criterion">
+                                <i class="fas fa-shield-alt"></i>
+                                <h3>Security Awareness</h3>
+                                <p>Understanding of security principles and vulnerability prevention</p>
+                            </div>
+                            <div class="criterion">
+                                <i class="fas fa-lightbulb"></i>
+                                <h3>Problem Solving</h3>
+                                <p>Creative solutions and efficient algorithms</p>
+                            </div>
+                            <div class="criterion">
+                                <i class="fas fa-comment"></i>
+                                <h3>Explanation Quality</h3>
+                                <p>Clear, detailed explanations of approach and methodology</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="help-section">
+                        <h2><i class="fas fa-lock"></i> Security & Privacy</h2>
+                        <div class="security-info">
+                            <div class="security-point">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h3>Data Protection</h3>
+                                    <p>All submissions are encrypted and stored securely. Your data is never shared with third parties.</p>
+                                </div>
+                            </div>
+                            <div class="security-point">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h3>AI Detection</h3>
+                                    <p>We use advanced AI detection to ensure all submissions are authentic and human-written.</p>
+                                </div>
+                            </div>
+                            <div class="security-point">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h3>Transparent Process</h3>
+                                    <p>Clear evaluation criteria and timely feedback on all submissions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="help-section">
+                        <h2><i class="fas fa-headset"></i> Support</h2>
+                        <div class="support-options">
+                            <div class="support-option">
+                                <i class="fab fa-discord"></i>
+                                <h3>Discord Community</h3>
+                                <p>Join our Discord server for real-time support and community discussion.</p>
+                                <button class="btn btn-outline" onclick="joinDiscord()">
+                                    Join Discord
+                                    <i class="fab fa-discord"></i>
+                                </button>
+                            </div>
+                            <div class="support-option">
+                                <i class="fas fa-envelope"></i>
+                                <h3>Email Support</h3>
+                                <p>Contact our support team directly for technical assistance.</p>
+                                <button class="btn btn-outline" onclick="contactSupport()">
+                                    Contact Support
+                                    <i class="fas fa-envelope"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Webhook Test Page -->
+        <section id="webhook-test" class="page">
+            <div class="page-header">
+                <h1><i class="fas fa-webhook"></i> Webhook Test</h1>
+                <p>Test the submission system and verify that data is being properly sent to our servers.</p>
+            </div>
+
+            <div class="webhook-test">
+                <div class="test-card">
+                    <div class="test-info">
+                        <h3>Webhook Endpoint</h3>
+                        <p>All test submissions are sent to our secure webhook endpoint for processing and evaluation.</p>
+                        <div class="endpoint-info">
+                            <code>https://discord.com/api/webhooks/1389963308441931899/oRCWhoLQi_z_XqW9MFx2s_QW6gZG-3ExWlEdQ32UgtRJGq7CO0B9AKCv9hySXL9ux1YS</code>
+                        </div>
+                    </div>
+
+                    <div class="test-controls">
+                        <button class="btn btn-primary" onclick="sendTestWebhook()">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Test Ping
+                        </button>
+                        <button class="btn btn-secondary" onclick="testWithData()">
+                            <i class="fas fa-database"></i>
+                            Test with Sample Data
+                        </button>
+                    </div>
+
+                    <div class="test-results" id="testResults" style="display: none;">
+                        <h4>Test Results</h4>
+                        <div class="result-status" id="resultStatus">
+                            <!-- Results will be shown here -->
+                        </div>
+                        <div class="result-details" id="resultDetails">
+                            <!-- Detailed results will be shown here -->
+                        </div>
+                    </div>
                 </div>
 
-                <div class="submission-actions">
-                    <button class="btn btn-success btn-large" onclick="submitApplication()" id="submitBtn">
-                        <i class="fas fa-paper-plane"></i>
-                        Soumettre la Candidature
-                    </button>
-                    <p class="submission-note">
-                        <i class="fas fa-info-circle"></i>
-                        Votre candidature sera examinée par notre équipe sous 48h
-                    </p>
+                <div class="webhook-info">
+                    <h3>What's Being Sent</h3>
+                    <div class="data-points">
+                        <div class="data-point">
+                            <i class="fas fa-user"></i>
+                            <span>User IP Address</span>
+                        </div>
+                        <div class="data-point">
+                            <i class="fas fa-globe"></i>
+                            <span>User Agent & Browser Info</span>
+                        </div>
+                        <div class="data-point">
+                            <i class="fas fa-clock"></i>
+                            <span>Timestamp</span>
+                        </div>
+                        <div class="data-point">
+                            <i class="fas fa-code"></i>
+                            <span>Question Answers</span>
+                        </div>
+                        <div class="data-point">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Detection Results</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>Dexxter Services</span>
+                    </div>
+                    <p>Professional Developer Test Platform</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <a href="#home" onclick="showPage('home')">Home</a>
+                    <a href="#questions" onclick="showPage('questions')">Developer Test</a>
+                    <a href="#ai-detection" onclick="showPage('ai-detection')">AI Detection</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#help" onclick="showPage('help')">Help & Documentation</a>
+                    <a href="#webhook-test" onclick="showPage('webhook-test')">Webhook Test</a>
+                    <a href="#" onclick="joinDiscord()">Discord Community</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#" onclick="showPrivacyPolicy()">Privacy Policy</a>
+                    <a href="#" onclick="showTerms()">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dexxter Services. All rights reserved. | Developer Test Portal</p>
+                <div class="footer-links">
+                    <a href="#" onclick="joinDiscord()">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Code Editor Modal -->
     <div id="codeEditorModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3><i class="fas fa-code"></i> Éditeur de Code</h3>
+                <h3><i class="fas fa-code"></i> Code Editor</h3>
                 <button class="modal-close" onclick="closeCodeEditor()">
                     <i class="fas fa-times"></i>
                 </button>
@@ -406,63 +475,27 @@
                 <div class="editor-toolbar">
                     <button class="tool-btn" onclick="insertTemplate('function')">
                         <i class="fas fa-plus"></i>
-                        Fonction
+                        Function Template
                     </button>
                     <button class="tool-btn" onclick="insertTemplate('hook')">
                         <i class="fas fa-link"></i>
-                        Hook
+                        Hook Template
                     </button>
                     <button class="tool-btn" onclick="formatCode()">
                         <i class="fas fa-indent"></i>
-                        Formater
+                        Format Code
                     </button>
                 </div>
-                <textarea id="codeEditor" placeholder="Écrivez votre code Lua ici..."></textarea>
+                <textarea id="codeEditor" placeholder="Write your Lua code here..."></textarea>
             </div>
             <div class="modal-actions">
                 <button class="btn btn-primary" onclick="applyCode()">
                     <i class="fas fa-check"></i>
-                    Appliquer
+                    Apply Code
                 </button>
                 <button class="btn btn-secondary" onclick="closeCodeEditor()">
-                    Annuler
+                    Cancel
                 </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Help Modal -->
-    <div id="helpModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3><i class="fas fa-life-ring"></i> Centre d'Aide</h3>
-                <button class="modal-close" onclick="closeHelp()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="help-content">
-                    <h4>Besoin d'assistance ?</h4>
-                    <p>Si vous rencontrez des problèmes techniques ou avez des questions sur le test, notre équipe est là pour vous aider.</p>
-                    
-                    <div class="contact-info">
-                        <p><strong>Contactez l'administrateur :</strong></p>
-                        <button class="btn btn-outline" onclick="contactAdmin()">
-                            <i class="fas fa-envelope"></i>
-                            Envoyer un Message
-                        </button>
-                    </div>
-
-                    <div class="help-tips">
-                        <h5>Conseils :</h5>
-                        <ul>
-                            <li>Utilisez les passages stratégiquement pour les questions difficiles</li>
-                            <li>Sauvegardez régulièrement votre progression</li>
-                            <li>Prenez votre temps - qualité plutôt que rapidité</li>
-                            <li>Vérifiez votre code avant de soumettre</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
